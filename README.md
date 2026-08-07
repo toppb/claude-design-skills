@@ -1,4 +1,4 @@
-# toppb-design-skills
+# toppb-skills
 
 Claude skills for design work. Currently one plugin.
 
@@ -28,7 +28,7 @@ text that survives extraction.
 
 ```
 /plugin marketplace add toppb/claude-design-skills
-/plugin install resume-ats-pdf@toppb-design-skills
+/plugin install resume-ats-pdf@toppb-skills
 ```
 
 ## Use
