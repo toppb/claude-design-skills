@@ -1,0 +1,20 @@
+{
+  "name": "toppb-design-skills",
+  "description": "Design and job-search skills by Topp Brocales",
+  "owner": {
+    "name": "Topp Brocales",
+    "url": "https://github.com/toppb"
+  },
+  "plugins": [
+    {
+      "name": "resume-ats-pdf",
+      "source": "./plugins/resume-ats-pdf",
+      "description": "Turn a designed resume into an HTML file that prints to a clean, machine-readable one-page PDF, and verify it before sending.",
+      "version": "1.0.0",
+      "author": { "name": "Topp Brocales" },
+      "license": "MIT",
+      "category": "productivity",
+      "keywords": ["resume", "ats", "pdf", "figma", "design", "job-search", "accessibility"]
+    }
+  ]
+}
