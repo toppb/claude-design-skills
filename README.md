@@ -1,6 +1,6 @@
 # toppb-skills
 
-Claude skills for design work. Currently one plugin.
+Claude skills for design work.
 
 ## resume-ats-pdf
 
