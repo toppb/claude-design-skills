@@ -1,6 +1,6 @@
 # toppb-skills
 
-Claude skills for design work.
+Claude skills for design work. Two plugins: `resume-ats-pdf` and `design-workflow`.
 
 ## resume-ats-pdf
 
@@ -23,6 +23,17 @@ isn't necessary.
 **What this does.** Keeps your design tool as the source of truth, rebuilds the resume as
 HTML, verifies the output automatically, and prints to PDF through Chrome — which writes
 text that survives extraction.
+
+## design-workflow
+
+Four skills for design-to-code work: `page-architect` (plan a page before building),
+`screenshot-to-html` (rebuild a screenshot as a single HTML file), `check-visual` (verify
+a UI change against its reference before calling it done) and `proposal-creator`
+(fixed-fee, phased proposals).
+
+```
+/plugin install design-workflow@toppb-skills
+```
 
 ## Install
 

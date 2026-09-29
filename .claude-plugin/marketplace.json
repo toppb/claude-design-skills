@@ -11,10 +11,39 @@
       "source": "./plugins/resume-ats-pdf",
       "description": "Turn a designed resume into an HTML file that prints to a clean, machine-readable one-page PDF, and verify it before sending.",
       "version": "1.0.0",
-      "author": { "name": "Topp Brocales" },
+      "author": {
+        "name": "Topp Brocales"
+      },
       "license": "MIT",
       "category": "productivity",
-      "keywords": ["resume", "ats", "pdf", "figma", "design", "job-search", "accessibility"]
+      "keywords": [
+        "resume",
+        "ats",
+        "pdf",
+        "figma",
+        "design",
+        "job-search",
+        "accessibility"
+      ]
+    },
+    {
+      "name": "design-workflow",
+      "source": "./plugins/design-workflow",
+      "description": "Skills for design-to-code work: plan pages, turn screenshots into HTML, verify visuals against a reference, and write fixed-fee proposals.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Topp Brocales"
+      },
+      "license": "MIT",
+      "category": "productivity",
+      "keywords": [
+        "design",
+        "figma",
+        "html",
+        "proposal",
+        "wireframe",
+        "qa"
+      ]
     }
   ]
 }
