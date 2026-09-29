@@ -94,13 +94,17 @@ Before generating anything, assess what you have. Check the conversation and any
 
 | Input | Status | Action if missing |
 |-------|--------|-------------------|
-| Client brief or positioning doc | Required | Ask or use whatever exists, flag assumptions |
+| Client brief or positioning doc | Required | Use the proposal's Handoff Summary if there is one (see below). Otherwise ask or use whatever exists, flag assumptions |
 | Sitemap / page list | Required for multi-page sites | Infer from brief, flag as assumed |
 | Approved copy | Optional | Write placeholder copy from positioning; flag clearly |
 | Brand voice notes | Optional | Default to professional B2B tone |
 | Design system / Figma components | Optional | Extract if available; otherwise use neutral wireframe styles |
 | Target audience | Required | Ask if truly unknown |
 | Existing wireframes for other pages | Check first | Review before starting to avoid content overlap |
+
+**If a proposal-creator Handoff Summary exists, use it as the brief.** Problem and Success Metrics
+set the page jobs. Scope and Phases give the page list. Out of Scope is what not to wireframe. Open
+Questions feed the content dependencies in Step 7. Say which fields you used.
 
 **If wireframes already exist for other pages in the same site**, read them before generating.
 Check what content is already placed and at what depth. The new page must complement — not repeat.
