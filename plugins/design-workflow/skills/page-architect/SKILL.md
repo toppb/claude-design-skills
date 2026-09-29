@@ -104,7 +104,7 @@ Before generating anything, assess what you have. Check the conversation and any
 
 **If a proposal-creator Handoff Summary exists, use it as the brief.** Problem and Success Metrics
 set the page jobs. Scope and Phases give the page list. Out of Scope is what not to wireframe. Open
-Questions feed the content dependencies in Step 7. Say which fields you used.
+Questions feed the content dependencies in Step 7. Inspiration and Domain Notes feed the research below. Say which fields you used.
 
 **Use the brief's research.** If the brief has Inspiration or Domain notes, read them and say what you
 took from each (layout, content order, tone). Skip this if the brief has neither.

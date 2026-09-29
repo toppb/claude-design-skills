@@ -89,6 +89,8 @@ consume. After the final proposal is approved, generate a **Handoff Summary** co
 **Out of Scope:** [explicit exclusions]
 **Key Risks:** [top 3]
 **Success Metrics:** [primary and secondary]
+**Inspiration:** [links the client shared, and what they liked about each]
+**Domain Notes:** [anything unfamiliar or researched that later steps should know]
 **Open Questions:** [anything unresolved, marked Critical / Important / Nice-to-know]
 ```
 
