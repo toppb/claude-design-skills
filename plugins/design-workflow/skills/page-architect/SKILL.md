@@ -106,6 +106,14 @@ Before generating anything, assess what you have. Check the conversation and any
 set the page jobs. Scope and Phases give the page list. Out of Scope is what not to wireframe. Open
 Questions feed the content dependencies in Step 7. Say which fields you used.
 
+**Use the brief's research.** If the brief has Inspiration or Domain notes, read them and say what you
+took from each (layout, content order, tone). Skip this if the brief has neither.
+
+**Optional quick scan.** For a new or unfamiliar category, or when the client shared reference sites,
+look at two or three competitor or inspiration pages. Note how each orders its content, what it leads
+with, and what it leaves out. Use that to pick strategies in Step 2. Don't copy layouts, and don't
+let the scan slow down a simple page.
+
 **If wireframes already exist for other pages in the same site**, read them before generating.
 Check what content is already placed and at what depth. The new page must complement — not repeat.
 
