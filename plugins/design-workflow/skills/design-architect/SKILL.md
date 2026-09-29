@@ -54,6 +54,10 @@ research below. Say which fields you used.
 **Use the brief's research.** If the brief has Inspiration or Domain notes, read them and say what
 you took from each. Skip this if it has neither.
 
+**Frameworks.** If a framework fits the project (human-centred design, Jobs to Be Done, journey
+mapping, WCAG), read `references/design-frameworks.md`, use it, and say which one shaped the work.
+Don't claim a framework was followed when only part of it was.
+
 **Quick research.** For a new or unfamiliar category, or when the client shared references, scan
 two or three comparable examples (five to eight for branding). Note how each is organised, what it
 leads with and what it leaves out. Use that to choose directions. Don't copy, and don't let the
@@ -128,6 +132,8 @@ All in `references/`:
 - `web.md` — web pages and full websites: content map, strategy selection, HTML build, Figma capture
 - `product-ux.md` — product and app UX: flow jobs, structural models, flow maps, key screens
 - `branding.md` — brand identity: category research, territories, boards, naming routes
+- `design-frameworks.md` — human-centred design, Double Diamond, Jobs to Be Done, design thinking, heuristics, journey maps, WCAG (all types)
+- `product-patterns.md` — flow and screen patterns for product UX: navigation, onboarding, states, tables, forms, search, notifications
 - `kit-inventory.md` — Figma wireframe kit component catalog (used by web and product wireframes)
 - `narrative-strategies.md` — 5 web page strategies with section sequences and component mappings
 - `component-patterns.md` — 60 UI components with best practices, layout patterns and anti-patterns

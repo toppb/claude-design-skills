@@ -58,6 +58,12 @@ Default pairings:
 Write a short entry for each chosen model: the argument, the navigation approach, what the home
 screen leads with, and the trade-off it accepts.
 
+## Product 3b — Frame with a Framework
+
+For a product project, use `design-frameworks.md`: Jobs to Be Done for the core jobs, the ISO
+"context of use" activity for users and constraints, and a journey map when a flow has several steps
+or channels. State which you used.
+
 ## Product 4 — Research
 
 Do a quick audit before choosing. Two or three comparable products (competitors, or best-in-class
@@ -84,7 +90,7 @@ Rules for the HTML:
 - Use realistic data. "Invoice 2041 · $1,240 · due in 3 days", not "Item 1". Flag invented data
   with an amber tag.
 - Use the client's design system if one exists, otherwise a neutral grayscale wireframe style. For visual polish, https://styles.refero.design/ is an optional reference. Wireframes stay neutral.
-- Follow `component-patterns.md` for component behaviour, sizing and accessibility. Read it and
+- Follow `product-patterns.md` for flow and screen patterns, and `component-patterns.md` for component behaviour, sizing and accessibility. Read it and
   skip the marketing-only components.
 - Mobile-first if the product is used on a phone.
 
