@@ -2,7 +2,7 @@
 name: proposal-creator
 description: >
   Create comprehensive, strategic project proposals for freelance design and consulting work.
-  Part of a pipeline: Brief Creator → **Proposal Creator** → One-Pager → PRD. Use when the
+  Part of a pipeline: brief-creator → **proposal-creator** → design-architect → build-handoff. Use when the
   user needs to generate a proposal for a client project. Takes a project brief (or raw context),
   budget, timeline, and rates as input and produces a streamlined, professional proposal document
   with structured handoff data for downstream skills. Triggers on phrases like "proposal",
@@ -14,11 +14,11 @@ description: >
 Create strategic, comprehensive proposals for freelance projects that position you as a
 strategic partner while protecting against scope creep.
 
-**Pipeline position:** This skill sits between the Brief Creator (upstream) and the
-One-Pager / PRD generators (downstream).
+**Pipeline position:** This skill sits between brief-creator (upstream) and
+design-architect (downstream, followed by build-handoff).
 
 ```
-Brief Creator → [you are here] Proposal Creator → One-Pager → PRD
+brief-creator → [you are here] proposal-creator → design-architect → build-handoff
 ```
 
 ---
@@ -67,7 +67,7 @@ flag them during the Readiness Check (Step 1 of the workflow).
 
 ## Pipeline: Output Contract
 
-The proposal must produce structured data that downstream skills (One-Pager, PRD) can
+The proposal must produce structured data that downstream skills (design-architect, build-handoff) can
 consume. After the final proposal is approved, generate a **Handoff Summary** containing:
 
 ```
@@ -94,7 +94,7 @@ consume. After the final proposal is approved, generate a **Handoff Summary** co
 **Open Questions:** [anything unresolved, marked Critical / Important / Nice-to-know]
 ```
 
-This summary feeds directly into the One-Pager and PRD skills.
+This summary feeds design-architect (as its brief) and build-handoff.
 
 ---
 
