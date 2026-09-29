@@ -36,10 +36,6 @@ plugins/design-workflow/skills/
 - `design-architect` includes research notes with sources. Items it could not verify are marked as such in the reference files.
 - The wireframe kit reference is based on a free Figma community kit.
 
-## Looking for the resume skill?
-
-It lives in its own repo: https://github.com/toppb/resume-ats-pdf
-
 ## License
 
 MIT
