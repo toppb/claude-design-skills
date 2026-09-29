@@ -1,8 +1,8 @@
 {
   "name": "design-workflow",
-  "description": "Skills for design-to-code work: plan pages, turn screenshots into HTML, verify visuals against a reference, and write fixed-fee proposals.",
+  "description": "Skills for design-to-code work: explore design directions for web, product UX and brand, turn screenshots into HTML, verify visuals against a reference, and write fixed-fee proposals.",
   "version": "1.0.0",
   "author": { "name": "Topp Brocales" },
   "license": "MIT",
-  "keywords": ["design", "figma", "html", "proposal", "wireframe", "qa"]
+  "keywords": ["design", "figma", "html", "proposal", "wireframe", "branding", "ux", "qa"]
 }

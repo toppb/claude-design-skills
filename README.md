@@ -26,7 +26,7 @@ text that survives extraction.
 
 ## design-workflow
 
-Four skills for design-to-code work: `page-architect` (plan a page before building),
+Four skills for design-to-code work: `design-architect` (explore directions for web, product UX or brand before designing),
 `screenshot-to-html` (rebuild a screenshot as a single HTML file), `check-visual` (verify
 a UI change against its reference before calling it done) and `proposal-creator`
 (fixed-fee, phased proposals).

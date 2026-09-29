@@ -1,29 +1,20 @@
----
-name: page-architect
-description: >
-  Strategic page design and multi-variation HTML wireframing for marketing websites and landing pages.
-  Use this skill whenever the user wants to wireframe or architect a homepage, landing page, or any
-  marketing website page — even if they just say "mock up the homepage", "show me some layout options",
-  "generate wireframe variations", or "let's wireframe the [page name] page". Also use when the user
-  shares a client brief, sitemap, or copy document and asks what the page could look like. Produces
-  3–5 strategically distinct HTML wireframes with substantive placeholder copy (not gray boxes), kit
-  component labels, annotated content dependencies, and production-grade component patterns — ready
-  to share with clients for direction and feedback.
----
+# Web: Pages and Full Websites
 
-# Page Architect
+Type file for marketing pages, landing pages and multi-page websites. The core skill
+(`../SKILL.md`) handles routing, input check and the overlap and dependency checks. This file holds
+the web-specific work: site-wide content strategy, strategy selection, design system extraction,
+placeholder copy, and the HTML wireframe build.
 
-Produces 3–5 HTML wireframe variations for a marketing page. Each variation represents a distinct
-narrative strategy, uses real placeholder copy grounded in the brief, and annotates what content
-is still needed from the client.
+**Unit of work:** a page. **Direction:** a narrative strategy. **Output:** one HTML wireframe per
+direction, plus a notes file.
 
-**Critical principle:** Wireframe pages as part of a site, not in isolation. Content placement
-is a site-wide decision. Every page has a job, and content appears at different depths across
-pages. Skipping this step causes overlap, rework, and mid-build confusion.
+**Critical principle:** Wireframe pages as part of a site, not in isolation. Content placement is a
+site-wide decision. Every page has a job, and content appears at different depths across pages.
+Skipping this step causes overlap, rework and mid-build confusion.
 
 ---
 
-## Step 0 — Site-Wide Content Strategy
+## Web 1 — Site-Wide Content Strategy
 
 **Do this before wireframing any individual page.** If you're wireframing the first page of a
 multi-page site, build the content map now. If pages already exist, review them before starting
@@ -86,45 +77,12 @@ When the same topic appears on multiple pages, vary the angle — not just the l
 | Evidence collection | "Audit-ready by design — evidence as a byproduct of operations" | "Evidence gathers from cloud infrastructure. Auditors self-serve." |
 | Capabilities | Compact overview (name + 1-line, links to Product) | Full deep-dive (screenshot + paragraph per feature) |
 
----
-
-## Step 1 — Input Check
-
-Before generating anything, assess what you have. Check the conversation and any attached files for:
-
-| Input | Status | Action if missing |
-|-------|--------|-------------------|
-| Client brief or positioning doc | Required | Use the proposal's Handoff Summary if there is one (see below). Otherwise ask or use whatever exists, flag assumptions |
-| Sitemap / page list | Required for multi-page sites | Infer from brief, flag as assumed |
-| Approved copy | Optional | Write placeholder copy from positioning; flag clearly |
-| Brand voice notes | Optional | Default to professional B2B tone |
-| Design system / Figma components | Optional | Extract if available; otherwise use neutral wireframe styles |
-| Target audience | Required | Ask if truly unknown |
-| Existing wireframes for other pages | Check first | Review before starting to avoid content overlap |
-
-**If a proposal-creator Handoff Summary exists, use it as the brief.** Problem and Success Metrics
-set the page jobs. Scope and Phases give the page list. Out of Scope is what not to wireframe. Open
-Questions feed the content dependencies in Step 7. Inspiration and Domain Notes feed the research below. Say which fields you used.
-
-**Use the brief's research.** If the brief has Inspiration or Domain notes, read them and say what you
-took from each (layout, content order, tone). Skip this if the brief has neither.
-
-**Optional quick scan.** For a new or unfamiliar category, or when the client shared reference sites,
-look at two or three competitor or inspiration pages. Note how each orders its content, what it leads
-with, and what it leaves out. Use that to pick strategies in Step 2. Don't copy layouts, and don't
-let the scan slow down a simple page.
-
-**If wireframes already exist for other pages in the same site**, read them before generating.
-Check what content is already placed and at what depth. The new page must complement — not repeat.
-
-State what you found and what you're assuming before generating. Don't ask more than one clarifying
-question — make reasonable assumptions and flag them inline with amber warning tags.
 
 ---
 
-## Step 2 — Select Narrative Strategies
+## Web 2 — Select Narrative Strategies
 
-Choose 3–5 variations from `references/narrative-strategies.md` based on the product and audience.
+Choose 3–5 variations from `narrative-strategies.md` based on the product and audience.
 
 **Default selection logic:**
 - Enterprise B2B SaaS → Trust-First (always), + Problem-First + Feature-Dense
@@ -132,12 +90,13 @@ Choose 3–5 variations from `references/narrative-strategies.md` based on the p
 - Early stage / awareness → Problem-First + Solution-First + Trust-First
 - High-intent referral traffic → Conversion-Minimal + Solution-First
 
-For each selected strategy, read the corresponding entry in `references/narrative-strategies.md`
+For each selected strategy, read the corresponding entry in `narrative-strategies.md`
 for the section sequence and component mapping.
+
 
 ---
 
-## Step 3 — Extract Design System (if available)
+## Web 3 — Extract Design System (if available)
 
 If the client has an existing site, landing page, or Figma components, extract the actual design
 system before generating wireframes. Don't assume — pull real values.
@@ -152,9 +111,10 @@ system before generating wireframes. Don't assume — pull real values.
 **If no design system exists**, use a neutral wireframe aesthetic: system fonts, grayscale palette,
 clean editorial styling. The wireframe's job is to communicate structure and copy, not final design.
 
+
 ---
 
-## Step 4 — Write Placeholder Copy
+## Web 4 — Write Placeholder Copy
 
 For every text element in every section, write real copy — not "[headline here]" boxes.
 
@@ -168,12 +128,13 @@ Copy must be:
 Write headlines, subheads, body copy, button labels, stat figures, feature names, framework names,
 FAQ questions/answers, testimonial quotes (with [Company TBD] placeholders), footer link labels.
 
+
 ---
 
-## Step 5 — Generate HTML
+## Web 5 — Generate HTML
 
-Read `references/kit-inventory.md` for the component library reference.
-Read `references/component-patterns.md` for component-level best practices, layout patterns, and anti-patterns before writing any HTML. For each component used (Hero, Header, Card, Table, Modal, Navigation, Footer, etc.), apply its documented best practices — sizing, spacing, accessibility, state handling, and anti-patterns to avoid.
+Read `kit-inventory.md` for the component library reference.
+Read `component-patterns.md` for component-level best practices, layout patterns, and anti-patterns before writing any HTML. For each component used (Hero, Header, Card, Table, Modal, Navigation, Footer, etc.), apply its documented best practices — sizing, spacing, accessibility, state handling, and anti-patterns to avoid.
 
 **Required elements per section:**
 - Green kit label badge (top-left): `Content Left / Layout 1`, `Stats / Layout 2`, etc.
@@ -196,9 +157,10 @@ Example: `acme-platform-a-solution-first.html`
 **Additionally**, generate a summary file with the comparison table, content map, and
 dependency checklist: `[project]-[page]-wireframe-notes.md`
 
+
 ---
 
-## Step 6 — Deduplication Check
+## Web 6 — Deduplication Check (run before delivering)
 
 **Before delivering**, run an explicit overlap check against all existing wireframes for the site.
 
@@ -220,41 +182,18 @@ If overlap is found, resolve it before delivering. The fix is usually:
 2. Rewrite the copy angle to match each page's job
 3. Move the content entirely to one page and remove from the other
 
----
-
-## Step 7 — Flag Content Dependencies
-
-At the end of the notes file, include a consolidated content checklist. For each item list:
-- What's needed
-- Which variations require it
-- Whether it's blocking (can't build without) or enhancing (can build with placeholder)
 
 ---
 
-## Quality Check Before Delivering
+## Web reference files
 
-- [ ] Site-wide content map exists and is current
-- [ ] Page job is defined and distinct from other pages
-- [ ] Every section has real copy, not placeholder labels
-- [ ] Stats are flagged as illustrative if not from verified source
-- [ ] Testimonials use [Name TBD] / [Company TBD] format (or real names if available)
-- [ ] No content duplicated at the same depth level across pages
-- [ ] Copy angle differs where the same topic appears on multiple pages
-- [ ] Each variation is a separate HTML file
-- [ ] At least one variation is labeled as recommended with rationale
-- [ ] Files open in a browser without errors
+- `kit-inventory.md` — Figma wireframe kit component catalog (sections, layouts, naming)
+- `narrative-strategies.md` — 5 strategy definitions with section sequences and component mappings
+- `component-patterns.md` — 60 UI components with best practices, layout patterns, aliases and anti-patterns
 
----
-
-## Reference Files
-
-- `references/kit-inventory.md` — Figma wireframe kit component catalog (sections, layouts, naming)
-- `references/narrative-strategies.md` — 5 strategy definitions with section sequences and component mappings
-- `references/component-patterns.md` — 60 UI components with best practices, layout patterns, aliases, and anti-patterns
-
-Read all three before generating. The kit inventory tells you *what components exist*; the narrative
-strategies tell you *which ones to use and in what order* for each variation; the component patterns
-tell you *how to implement each component correctly* in the HTML output.
+Read all three before generating HTML. The kit inventory tells you what components exist; the
+narrative strategies tell you which ones to use and in what order; the component patterns tell you
+how to implement each correctly.
 
 ---
 
