@@ -1,101 +1,44 @@
-# toppb-skills
+# freelance-design-skills
 
-Claude skills for design work. Two plugins: `resume-ats-pdf` and `design-workflow`.
+Claude skills for freelance design work, from first brief to approved build. One plugin, `design-workflow`, with four skills:
 
-## resume-ats-pdf
+| Skill | What it does |
+|-------|--------------|
+| `proposal-creator` | Turns a project brief into a fixed-fee, phased proposal, and produces a Handoff Summary for the next step |
+| `design-architect` | Explores 3-5 strategically different directions for a web page or site, a product or app, or a brand. Includes references for web, product UX, branding, and design frameworks |
+| `screenshot-to-html` | Rebuilds a product screenshot as an editable HTML file, then renders 1x and 2x PNGs |
+| `check-visual` | Verifies a UI change against its reference (Figma, image, live site) before calling it done |
 
-**The problem.** Design tools write PDFs by placing glyphs at coordinates. Text
-extractors then reconstruct words and reading order from geometry, and they frequently
-get it wrong. The characteristic symptom is words splitting mid-token:
-
-```
-Led the rede sign of the onboar ding flow    ← "redesign", "onboarding"
-hello @example.com                           ← email is now undeliverable
-5 5 5 123 4 5 67                             ← phone is garbage
-```
-
-A fragmented email means every system that autofills from your PDF gets a dead address.
-The failure is invisible to you, because the PDF looks perfect.
-
-Most advice resolves this by telling designers to give up and use a Word template. That
-isn't necessary.
-
-**What this does.** Keeps your design tool as the source of truth, rebuilds the resume as
-HTML, verifies the output automatically, and prints to PDF through Chrome — which writes
-text that survives extraction.
-
-## design-workflow
-
-Four skills for design-to-code work: `design-architect` (explore directions for web, product UX or brand before designing),
-`screenshot-to-html` (rebuild a screenshot as a single HTML file), `check-visual` (verify
-a UI change against its reference before calling it done) and `proposal-creator`
-(fixed-fee, phased proposals).
-
-```
-/plugin install design-workflow@toppb-skills
-```
+They work in this order: `proposal-creator` -> `design-architect` -> (optional) `screenshot-to-html` -> build -> `check-visual`. Skills hand off through files, and you drive each step.
 
 ## Install
 
 ```
-/plugin marketplace add toppb/claude-design-skills
-/plugin install resume-ats-pdf@toppb-skills
+/plugin marketplace add toppb/freelance-design-skills
+/plugin install design-workflow@freelance-design-skills
 ```
 
-## Use
-
-Ask Claude to rebuild your resume for applications, or say your resume isn't parsing
-properly. The skill triggers on its own.
-
-To run the verifier directly:
-
-```bash
-pip install playwright pypdf --break-system-packages
-python3 -m playwright install chromium
-
-python3 scripts/verify_resume.py resume.html --fonts ./fonts --expect 2,2,2,1,2,1
-```
-
-It renders the HTML headless, prints a PDF, extracts the text back out, and compares it
-against what the HTML actually says. Checks:
-
-| Check | Catches |
-|---|---|
-| Word integrity | Character-level fragmentation (`rede sign`) |
-| Contact details | A corrupted email or phone number |
-| Reading order | Sections extracting out of sequence |
-| Run-together fields | `2022Design Mentor` — a missing space in the text stream |
-| Orphan separators | A wrapped line starting with `·` |
-| Page count + headroom | Silent overflow to a second page |
-| Line counts | Blocks that wrap differently than your design file |
-| Wrapped date cells | A date splitting across two lines |
-
-Nothing is hardcoded to one resume — expectations are derived from the HTML itself.
-
-`--fonts` points at a directory of font files named `Family-weight.woff2` (e.g.
-`Inter-400.woff2`). Without it, webfonts from a CDN can't be checked reliably.
+Or copy a skill folder from `plugins/design-workflow/skills/` into your own skills directory.
 
 ## Contents
 
 ```
-plugins/resume-ats-pdf/skills/figma-resume-to-ats-pdf/
-├── SKILL.md                        workflow and guidance
-├── scripts/verify_resume.py        the verifier
-├── assets/resume-template.html     starting template, load-bearing rules commented
-└── references/failure-modes.md     8 failure modes, causes, fixes, and dead ends
+plugins/design-workflow/skills/
+├── proposal-creator/
+├── design-architect/          SKILL.md + references/ (web, product-ux, branding, design-frameworks,
+│                              product-patterns, kit-inventory, narrative-strategies, component-patterns)
+├── screenshot-to-html/        SKILL.md + scripts/
+└── check-visual/
 ```
-
-`references/failure-modes.md` is worth reading on its own if you're debugging a resume
-PDF, whatever tooling you use.
 
 ## Notes
 
-- **Chrome specifically.** Other browsers use different print engines.
-- **Print settings matter.** Margins: None. Scale: 100%. Anything else adds margins on top
-  of the page rule and causes extra line wraps.
-- **This isn't a silver bullet.** Greenhouse, Ashby and Lever don't auto-reject on keyword
-  scores — they parse into fields for a recruiter to search. This removes a failure mode.
-  It doesn't fix a weak resume or a bad application channel.
+- `design-architect` includes research notes with sources. Items it could not verify are marked as such in the reference files.
+- The wireframe kit reference is based on a free Figma community kit.
+
+## Looking for the resume skill?
+
+It lives in its own repo: https://github.com/toppb/resume-ats-pdf
 
 ## License
 
