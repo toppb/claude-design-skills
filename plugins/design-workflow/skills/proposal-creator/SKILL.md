@@ -351,12 +351,12 @@ Phase Structure Guidelines:
    - Backend integration needs = add to allocation
    - Multiple stakeholders = add buffer
 
-**Example phase structure (subscription-media UX overhaul, 12 weeks):**
+**Example phase structure (Client A, UX overhaul, 12 weeks):**
 - Phase 0 (Discovery)
-- Phase 1A (Subscription UX — critical path)
+- Phase 1A (Priority flow — critical path)
 - Phase 1B (Strategy & IA)
 - Phase 2 (High Priority Pages — most pages)
-- Phase 3 (Games & Contests)
+- Phase 3 (Secondary features)
 
 ---
 
@@ -486,7 +486,7 @@ Brief with key info in bullets.
 - Shorter timelines typically
 
 **Strategic UX/Product Design Projects:**
-- Heavy discovery/research phase (like the subscription-media example above)
+- Heavy discovery/research phase (like the Client A example)
 - Focus on IA, strategy, conversion optimization
 - Multiple parallel workstreams
 - Longer timelines, more complex
@@ -525,21 +525,21 @@ A good proposal:
 
 ---
 
-## Example: Subscription-media UX overhaul
+## Example: Client A, UX overhaul
 
 For reference, here's how these principles were applied to a real UX overhaul project:
 
 **Context:**
 - Referred client (existing relationship)
-- Timeline: 12 weeks with critical launch deadline for subscription UX
+- Timeline: 12 weeks with critical launch deadline for the priority flow
 - Major backend transformation happening (new customer-data stack)
 - 5 stakeholders plus light involvement from founder
 
 **Key Decisions:**
 - Positioned as strategic UX overhaul (IA, messaging, conversion) not visual redesign
 - Discovery phase (2 weeks) to validate approach before committing to design direction
-- Subscription UX prioritized on critical path (Weeks 3-5) to hit the deadline
-- Strategy/IA ran parallel to subscription work to maintain momentum
+- Priority flow prioritized on critical path (Weeks 3-5) to hit the deadline
+- Strategy/IA ran parallel to the priority-flow work to maintain momentum
 - Fixed fee split across 5 phases
 - Streamlined activities to avoid locking into specific methods
 - Kept technical specs tool-agnostic (not a named-vendor spec but "backend integration specs")
