@@ -443,6 +443,8 @@ Best,
 **Keep it:** Professional but conversational. Focused on their needs. Inviting discussion.
 Brief with key info in bullets.
 
+**Voice:** If the user has a voice or style skill, run the email through it before handing it over. The template above is a structure, not the wording. Open with one short, specific line, not a summary of the proposal.
+
 ---
 
 ## Common Adjustments After Client Feedback
@@ -510,7 +512,7 @@ A good proposal:
 - Focuses on solving problems, not just making things
 - Protects you from scope creep (revision caps, clear exclusions)
 - Gives you flexibility to adapt based on discovery
-- Is appropriate for the relationship (doc for existing clients, more formal for cold leads)
+- Is appropriate for the relationship (doc for existing clients, more context up front for cold leads)
 - Invites discussion rather than demanding approval
 - Prices fairly based on your rates and project complexity
 - Includes confidentiality protection
