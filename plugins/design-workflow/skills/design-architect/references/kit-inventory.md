@@ -5,7 +5,7 @@ Figma file: `C8zAhhmjoPsjl3nAXKHtVE`
 
 This kit uses a grayscale wireframe aesthetic with Roboto type and IBM Carbon-derived color tokens.
 All section components are named `section` in the file — the names below are descriptive labels
-derived from their visual structure for use as kit labels in wireframe HTML output.
+derived from their visual structure. Use them in the notes file and for layer or section ids, never as labels on the mockups.
 
 ---
 
@@ -78,7 +78,7 @@ All named: `Mobile / [Logo] / [Icons]`
 ## Section Components
 
 Sections are the primary building blocks. Each is a full-width (1440px) block.
-Use these names as the green kit label badges in wireframe HTML output.
+Use these names in the notes file and for section ids, not as badges on the mockups.
 
 ### Hero Sections
 
@@ -190,10 +190,10 @@ All named: `Desktop / [Size] / [Logo] / [Layout]`
 
 ---
 
-## Kit Label Convention for HTML Wireframes
+## Kit Label Convention
 
-Every section in a wireframe HTML file gets a **green kit label badge** in the top-left corner.
-Format: `[Category] / [Layout] / [Variant]`
+Kit labels name sections in the notes file and in section ids (`id="hero"`). They do **not**
+appear on the mockups: no badges, no assumption tags. Format: `[Category] / [Layout] / [Variant]`
 
 Examples:
 - `Hero / Split / Content Left`
@@ -203,7 +203,7 @@ Examples:
 - `FAQ / Accordion / 1-col`
 - `Footer / L / Full`
 
-Amber assumption badges go in the top-right when content depends on client delivery.
+Assumptions that depend on client delivery go in the notes file's dependency checklist.
 
 ---
 

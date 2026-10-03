@@ -73,7 +73,8 @@ It's third-party and its terms are unverified, so treat it as inspiration only.
 not repeat them.
 
 State what you found and what you're assuming before generating. Ask no more than one clarifying
-question. Otherwise make reasonable assumptions and flag them inline with amber tags.
+question. Otherwise make reasonable assumptions and list them in the notes file. Never mark them on
+the mockups.
 
 ## Step 3 — Define the Jobs
 
@@ -91,12 +92,14 @@ Mark one direction as recommended, with a rationale tied to the brief's goal.
 
 Follow the type file's output spec. For all types:
 - Use real content, grounded in the brief. No "[headline here]" boxes.
-- Flag placeholder content, invented numbers and unverified claims clearly.
+- **Keep the mockups clean.** No labels, badges, banners, tags, annotation bars or notes on them.
+  The file name carries the strategy. Flag placeholder content, invented numbers and unverified
+  claims in the notes file, and write the copy so it reads as real.
 - Make it reaction-worthy: the client should be able to say "yes, that direction" or "no, more
   like X".
 - One file per direction, so each can be reviewed or captured on its own.
-- Also produce a notes file with the comparison table, the recommendation and the dependency
-  checklist: `[project]-[unit]-notes.md`.
+- Also produce a notes file with the comparison table, the recommendation, a list of placeholders
+  and unverified items (by section), and the dependency checklist: `[project]-[unit]-notes.md`.
 
 ## Step 6 — Overlap Check and Dependencies
 
@@ -115,7 +118,8 @@ Then end the notes file with a consolidated dependency checklist. For each item:
 - [ ] Project type stated, and the matching type file was read
 - [ ] Every unit has a job that is distinct from the others
 - [ ] 3–5 directions, each different in strategy, not just styling
-- [ ] Real content in every direction, with placeholders and assumptions flagged
+- [ ] Real content in every direction, with placeholders and assumptions listed in the notes file
+- [ ] Nothing on the mockups except the design itself (no labels, badges, banners or annotations)
 - [ ] Overlap check done and resolved
 - [ ] One direction recommended, with rationale
 - [ ] One file per direction, plus the notes file

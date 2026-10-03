@@ -121,7 +121,7 @@ For every text element in every section, write real copy — not "[headline here
 Copy must be:
 - **Grounded in the brief** — use actual positioning, frameworks, claims from source material
 - **Specific, not generic** — "Law 25 and PIPEDA compliance, automated" not "compliance made easy"
-- **Clearly flagged as placeholder** — include a note at the top of the file and amber assumption tags on stats, testimonials, and unverified claims
+- **Flagged in the notes file, not on the page** — list every placeholder, invented stat, unconfirmed quote and unverified claim in the notes file. Don't tag them on the mockup. Where real content can't be written (a member quote), use plain neutral placeholder text with no tag
 - **Reaction-worthy** — the goal is for the client to say "yes, that direction" or "no, more like X"
 - **Depth-appropriate** — copy on a Compact capabilities section reads differently than the Full version on another page. Don't just truncate; reframe for the page's job.
 
@@ -136,10 +136,10 @@ FAQ questions/answers, testimonial quotes (with [Company TBD] placeholders), foo
 Read `kit-inventory.md` for the component library reference.
 Read `component-patterns.md` for component-level best practices, layout patterns, and anti-patterns before writing any HTML. For each component used (Hero, Header, Card, Table, Modal, Navigation, Footer, etc.), apply its documented best practices — sizing, spacing, accessibility, state handling, and anti-patterns to avoid.
 
-**Required elements per section:**
-- Green kit label badge (top-left): `Content Left / Layout 1`, `Stats / Layout 2`, etc.
-- Amber assumption badge (top-right): when content depends on client delivery
-- Assumption note bar (below section): italic amber explanation of what's needed and why
+**Keep the mockup clean.** No kit label badges, assumption badges, note bars, test banners or any
+other annotation on the page. The file name already says which strategy it is. Put the section
+names and assumptions in the notes file instead. Give each section an `id` (`id="hero"`,
+`id="steps"`) so layers are named when captured to Figma.
 
 **File structure:**
 - Single self-contained HTML file per variation (no external dependencies except system fonts)

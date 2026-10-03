@@ -65,7 +65,7 @@ Each board contains:
 1. **Territory name and positioning line**: who it is for, what it stands for, why it is different.
 2. **Personality**: three words, each with what it means in practice and what it rules out.
 3. **Voice sample**: a headline, a tagline, and a short paragraph written in the territory's voice.
-4. **Visual direction** (reference https://styles.refero.design/ for type and palette mood, inspiration only): palette direction (hex values labelled illustrative), type direction
+4. **Visual direction** (reference https://styles.refero.design/ for type and palette mood, inspiration only): palette direction (hex values are illustrative; say so in the notes file, not on the board), type direction
    (real font pairings, with why), imagery style, and a logo direction in words, or a simple
    wordmark set in the proposed type.
 5. **Applications**: two or three quick sketches or descriptions of the brand in use (sign,
